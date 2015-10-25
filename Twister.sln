@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalLibraries", "ExternalLibraries", "{2AB2879D-0BB5-44D4-B11E-6B59B579FB16}"
+	ProjectSection(SolutionItems) = preProject
+		ExternalLibraries\System.Web.Mvc.Expressions.dll = ExternalLibraries\System.Web.Mvc.Expressions.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{5D881609-49CE-4163-A119-ACEB7BCA5C5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0D387557-BEF7-419E-8B89-ED0C7674F434}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{D072DCB1-19C1-4B51-B446-88864DB531BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{18CF8E1D-7D37-4FB2-BD7C-918E792FE850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twister.Web", "Twister.Web\Twister.Web.csproj", "{6A0BEBCF-8DB4-41C9-A2EC-94A4D370749C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twister.Data", "Twister.Data\Twister.Data.csproj", "{7022FB2D-0EFA-48C6-946C-23FD0D85AA36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twister.Models", "Twister.Models\Twister.Models.csproj", "{11E6210C-1C5A-4CFC-A541-BD3900A2C2E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A0BEBCF-8DB4-41C9-A2EC-94A4D370749C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A0BEBCF-8DB4-41C9-A2EC-94A4D370749C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A0BEBCF-8DB4-41C9-A2EC-94A4D370749C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A0BEBCF-8DB4-41C9-A2EC-94A4D370749C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7022FB2D-0EFA-48C6-946C-23FD0D85AA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7022FB2D-0EFA-48C6-946C-23FD0D85AA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7022FB2D-0EFA-48C6-946C-23FD0D85AA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7022FB2D-0EFA-48C6-946C-23FD0D85AA36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11E6210C-1C5A-4CFC-A541-BD3900A2C2E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E6210C-1C5A-4CFC-A541-BD3900A2C2E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E6210C-1C5A-4CFC-A541-BD3900A2C2E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E6210C-1C5A-4CFC-A541-BD3900A2C2E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A0BEBCF-8DB4-41C9-A2EC-94A4D370749C} = {5D881609-49CE-4163-A119-ACEB7BCA5C5B}
+		{7022FB2D-0EFA-48C6-946C-23FD0D85AA36} = {D072DCB1-19C1-4B51-B446-88864DB531BB}
+		{11E6210C-1C5A-4CFC-A541-BD3900A2C2E5} = {D072DCB1-19C1-4B51-B446-88864DB531BB}
+	EndGlobalSection
+EndGlobal
