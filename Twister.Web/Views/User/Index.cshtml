@@ -1,0 +1,14 @@
+﻿@model Twister.Web.ViewModels.UserViewModel
+
+@Html.DisplayNameFor(x => x.Fullname): @Html.DisplayFor(x => x.Fullname)
+@Html.DisplayNameFor(x => x.Gender): @Html.DisplayFor(x => x.Gender)
+
+@foreach (var t in Model.WallTweets)
+{
+    @t.Content
+}
+
+@foreach (var t in Model.OwnTweets)
+{
+    @t.Content
+}

@@ -46,7 +46,7 @@
                 .WithMany()
                 .Map(m =>
                 {
-                    m.MapLeftKey("ApplicationUserId");
+                    m.MapLeftKey("UserId");
                     m.MapRightKey("FollowerId");
                     m.ToTable("UsersFollowers");
                 });
@@ -56,7 +56,7 @@
                 .WithMany()
                 .Map(m =>
                 {
-                    m.MapLeftKey("ApplicationUserId");
+                    m.MapLeftKey("UserId");
                     m.MapRightKey("FollowedFriendId");
                     m.ToTable("UsersFollowedFriends");
                 });
