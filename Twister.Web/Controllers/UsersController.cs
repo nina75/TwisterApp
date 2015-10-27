@@ -7,9 +7,9 @@
     using System.Data.Entity;
 
     [Authorize]
-    public class UserController : BaseController
+    public class UsersController : BaseController
     {
-        public UserController(ITwisterData data)
+        public UsersController(ITwisterData data)
             :base(data)
         {
         }
@@ -19,6 +19,8 @@
             var user = this.Data.Users
                 .All()
                 .Include(x => x.OwnTweets)
+                .Include("OwnTweets.Tweet")
+                .Include("OwnTweets.Tweet.User")
                 .Include(x => x.WallTweets)
                 .Where(x => x.UserName == username)
                 .Select(UserViewModel.ViewModel)

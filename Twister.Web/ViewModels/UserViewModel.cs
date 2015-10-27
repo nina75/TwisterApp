@@ -23,7 +23,9 @@
                     ProfileImageDataMinified = x.ProfileImageDataMinified,
                     CoverImageData = x.CoverImageData,
                     OwnTweets = x.OwnTweets.AsQueryable().Select(TweetViewModel.ViewModel),
-                    WallTweets = x.WallTweets.AsQueryable().Select(TweetViewModel.ViewModel)
+                    WallTweets = x.WallTweets.AsQueryable().Select(TweetViewModel.ViewModel),
+                    Followers = x.Followers.AsQueryable().Select(f => f.UserName),
+                    FollowedFriends = x.FollowedFriends.AsQueryable().Select(f => f.UserName)
                 };
             }
         }
@@ -48,6 +50,10 @@
 
         public IEnumerable<TweetViewModel> WallTweets { get; set; }
 
+        public IEnumerable<string> Followers { get; set; }
+
+        public IEnumerable<string> FollowedFriends { get; set; }
+
         //public virtual ICollection<Message> Messages
         //{
         //    get { return this.messages; }
@@ -58,12 +64,6 @@
         //{
         //    get { return this.favoritesTweets; }
         //    set { this.favoritesTweets = value; }
-        //}
-
-        //public virtual ICollection<User> Followers
-        //{
-        //    get { return this.followers; }
-        //    set { this.followers = value; }
         //}
 
         //public virtual ICollection<User> FollowedFriends
