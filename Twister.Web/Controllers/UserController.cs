@@ -6,6 +6,7 @@
     using ViewModels;
     using System.Data.Entity;
 
+    [Authorize]
     public class UserController : BaseController
     {
         public UserController(ITwisterData data)

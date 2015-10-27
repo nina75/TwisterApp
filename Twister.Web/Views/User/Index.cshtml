@@ -3,12 +3,8 @@
 @Html.DisplayNameFor(x => x.Fullname): @Html.DisplayFor(x => x.Fullname)
 @Html.DisplayNameFor(x => x.Gender): @Html.DisplayFor(x => x.Gender)
 
-@foreach (var t in Model.WallTweets)
-{
-    @t.Content
-}
+<hr/>
+@Html.DisplayFor(x => x.OwnTweets)
 
-@foreach (var t in Model.OwnTweets)
-{
-    @t.Content
-}
+<hr/>
+@Html.DisplayFor(x => x.WallTweets)
